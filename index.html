@@ -5,41 +5,282 @@
     <title>CATA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/files.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/media/cata-black.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
+
 <body>
-    <div class="banner">
-        <nav class="navbar navbar-expand-lg fixed-top" style="background:#fff;box-shadow:0 0 10px rgba(0,0,0,.2); display: flex; align-items: center; justify-content: center;">
-            <div class="container"><a class="navbar-brand" href="#"><img src="assets/media/cata-black.png" style="font-size:55px;font-family:Foldit,sans-serif;padding:0" height="90px"></a>  
+        
+        <nav class="navbar navbar-expand-lg fixed-top" style="background: #fff; box-shadow: rgba(0, 0, 0, 0.075) 0 1px; text-align: center;">
+            <div class="container"><a class="navbar-brand" href="#" style="font-weight: bold; color: black; font-size:25px;font-family:Foldit,sans-serif;padding:0">
+                <img src="assets/media/cata-black.png" height="70px"></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" style="outline:0;border:none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-menu"><path d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path d="M4 18l16 0"></path></svg></button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                        <li class="nav-item active"><a class="nav-link n-1" href="#">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link n-2" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link n-3" href="#convert">Convert</a></li>
+                        <li class="nav-item"><a class="nav-link n-4" href="#help">Help</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <div class="container" style="margin-top:150px; text-align: center;">
+            <h1 class="landing-h1" style="color: black; letter-spacing: -3.15px; font-size: 70px; font-weight: 700; line-height: 77px;">Welcome to <span class="awesome">CATA</span> , </h1><h1 style="color: black; letter-spacing: -3.15px; font-size: 70px; font-weight: 700; line-height: 77px;"> Start Converting!</h1><br><br>
+            
+            <div style="display: flex; justify-content: center; align-items: center;">
+              <a href="#convert" style="text-decoration: none;">
+              <button class="animated-button" href="#convert">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">Convert</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+            </div>
+              
+
+                <div class="container" style="margin-top: 50px;">
+                 <div class="row justify-content-center text-center">
+                  <div class="col-md-6">
+                  <span class="counter-num" style="font-size: 3.5rem;">+</span><span id="count1" style="font-weight: bold; color:#000" class="display-4"></span><br>
+                  <h2 class="counter-text" style="font-size: 2rem; letter-spacing: -1.5px; font-weight: 700; color:#000">Users</h2><br><br>
+                  </div>
+                  <div class="col-md-6">
+                    <span class="counter-num" style="font-size: 3.5rem;">+</span><span id="count2" style="font-weight: bold; color:#000" class="display-4"></span><br>
+                    <h2 class="counter-text" style="font-size: 2rem; letter-spacing: -1.5px; font-weight: 700; color:#000">Files Converted</h2>                  </div>
+                </div>
+            
     </div>
-    </nav>
-    <div class="container" style="text-align:center;padding-top:250px">
-        <h1 style="font-family:Ubuntu,sans-serif;color:#000;font-weight:700;font-size:65px">Convert any Image formats</h1><br><br><br>
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-3" style="text-align:center"><a href="jpg.html"><button><span class="box" style="text-align:center">Image to jpg</span></button></a></div>
-            <div class="col-12 col-sm-6 col-md-3" style="text-align:center"><a href="webp.html"><button><span class="box">Image to webp</span></button></a></div>
-            <div class="col-12 col-sm-6 col-md-3" style="text-align:center"><a href="png.html"><button><span class="box">Image to png</span></button></a></div>
-            <div class="col-12 col-sm-6 col-md-3" style="text-align:center"><a href="jpeg.html"><button><span class="box">Image to jpeg</span></button></a></div>
-            <div class="col-12 col-md-3" style="text-align:center"><a href="avif.html"><button><span class="box">Image to avif</span></button></a></div>
-            <div class="col-12 col-md-3" style="text-align:center"><a href="tiff.html"><button><span class="box">Image to tiff</span></button></a></div>
-            <div class="col-12 col-md-3" style="text-align:center"><a href="raw.html"><button><span class="box">Image to RAW</span></button></a></div>
-            <div class="col-12 col-md-3" style="text-align:center"><a href="bmp.html"><button><span class="box">Image to bmp</span></button></a></div>
-            <div class="col-12 col-md-3" style="text-align:center"><a href="file.html"><button><span class="box">Text to File</span></button></a></div>
+
+    </div>
+
+
+    <div class="container" id="about">
+      <div class="row">
+        <div class="col-md-6 col-12" style="text-align: left; margin-top: 300px;">
+        
+      <h1 style="color: black; letter-spacing: -3.15px; font-size: 70px; font-weight: 700; line-height: 77px;">What is CATA?</h1><br>
+      <p style="color: #000; font-weight: 500; letter-spacing: -1px; font-size: 20px;">CATA is an App that convert between Six Different Image Formats (png, jpg, webp, avif, bmp, tiff)<br>Made by Azab.</p>
         </div>
+      <div class="col-md-6 col-12 hero-about" style="text-align: right; margin-top: 250px;"><img src="assets/media/poly-twist-knots.png" height="350px" alt=""></div>
     </div>
-    </div>
+     <br><br>
+        
+     <section id="convert">
+      
+</div>
+
+        
+     <section id="convert">
+      
+<div class="container"  style="margin-top: 150px; text-align: center;">
+  <h1
+    style="color: black; letter-spacing: -2.15px; font-size: 55px; font-weight: 700; line-height: 77px; margin-bottom: 40px;">
+    Upload Your Image and Choose a Format</h1>
+      <form action="">
+           <input type="file" name="name" id="input" placeholder="From file format" style="font-size:12px;padding:20px;border-color:rgba(43,21,21,.136);background:#fff;border-radius:30px; margin-bottom: 30px;">
+<div class="row">
+           <div class="col-md-4 col-12">
+          <button class="boton-elegante" onclick="converttoPNG()"
+                >Convert to .png
+          </button>
+          <br><br><br>
+        </div>
+        <div class="col-md-4 col-12">
+          <button class="boton-elegante-5" onclick="converttoJPG()"
+                >Convert to .jpg
+          </button> <br><br><br>
+        </div>
+        <div class="col-md-4 col-12">
+          <button class="boton-elegante" onclick="converttowebp()"
+                >Convert to .webp
+          </button> <br><br><br>
+        </div>
+        <div class="col-md-4 col-12">
+          <button class="boton-elegante-5" onclick="converttoAVIF()"
+                >Convert to .avif
+          </button> <br><br><br>
+        </div>
+        <div class="col-md-4 col-12">
+          <button class="boton-elegante" onclick="converttoBMP()"
+                >Convert to .bmp
+          </button> <br><br><br>
+        </div>
+        <div class="col-md-4 col-12">
+          <button class="boton-elegante-5" onclick="converttoTIFF()"
+                >Convert to .tiff
+          </button> <br><br><br>
+        </div>
+      </div>
+    </form>
+
+
+  <br><br>
+
+
+</div>
+</section>
+
+
+<div class="container" id="help" style="margin-top: 150px; text-align: center;">
+  <h1 style="color: black; letter-spacing: -3.15px; font-size: 70px; font-weight: 700; line-height: 77px;">Need Help?</h1>
+  <h2 style="color: #252525; letter-spacing: -1px; font-size: 25px; font-weight: 700; line-height: 30px;">Contact us!</h2>
+  <div class="row">
+    <div class="col-md-6 col-12" style="text-align: left; margin-top: 30px;">
+   
+<div class="form-container">
+  <div class="form">
+      <span class="heading">Get in touch</span>
+      <input placeholder="Name" type="text" class="input">
+      <input placeholder="Email" id="mail" type="email" class="input">
+      <textarea placeholder="Your Message" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+      <div class="button-container">
+      <div class="send-button">Send</div>
+
+  </div>
+</div>
+</div>    </div>
+  <div class="col-md-6 col-12 hero-contact" style="text-align: right; margin-top: 100px;"><img src="assets/media/round-triangle-chain.png" height="350px" alt=""></div>
+</div>
+ <br><br>
+    
+  
+</div>
+
+<footer class="footer-section">
+  <div class="container">
+      <div class="footer-content pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-12 col-lg-12 mb-50" style="text-align: center;">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <img src="assets/media/AzabBlack-noBG.png" height="50px" style="cursor: pointer;" title="Azab">
+                      </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Azab CATA &copy; 2024, All Right Reserved</p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#about">About</a></li>
+                          <li><a href="#convert">Convert</a></li>
+                          <li><a href="#help">Help</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
+    
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+ function counter(id, start, end, duration) {
+  let obj = document.getElementById(id),
+   current = start,
+   range = end - start,
+   increment = end > start ? 1 : -1,
+   step = Math.abs(Math.floor(duration / range)),
+   timer = setInterval(() => {
+    current += increment;
+    obj.textContent = current;
+    if (current == end) {
+     clearInterval(timer);
+    }
+   }, step);
+ }
+ counter("count1", 0, 100, 3000);
+ counter("count2", 0, 500, 2500);
+});
+
+</script>
+
+<script
+  async
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_test_bm9ibGUtZWxrLTAuY2xlcmsuYWNjb3VudHMuZGV2JA"
+  src="https://noble-elk-0.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
+  type="text/javascript"
+></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+  window.addEventListener("load", async function () {
+    await Clerk.load();
+
+    if (Clerk.user) {
+      document.getElementById("app").innerHTML = `
+        <div id="user-button"></div>
+      `;
+
+      const userButtonDiv = document.getElementById("user-button");
+
+      Clerk.mountUserButton(userButtonDiv);
+    } else {
+      document.getElementById("app").innerHTML = `
+        <div id="sign-in"></div>
+      `;
+
+      const signInDiv = document.getElementById("sign-in");
+
+      Clerk.mountSignIn(signInDiv);
+    }
+  });
+</script>
+    <script
+  async
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_test_aHVtb3JvdXMtdHJvbGwtMjYuY2xlcmsuYWNjb3VudHMuZGV2JA"
+  src="https://humorous-troll-26.clerk.accounts.dev/npm/@clerk/clerk-js@4/dist/clerk.browser.js"
+  type="text/javascript">
+</script>
+
+<script>
+    window.addEventListener("load", async function () {
+      await Clerk.load();
+  
+      console.log("ClerkJS is loaded");
+    });
+  </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init()
     </script>
+
 </body>
 
 </html>
